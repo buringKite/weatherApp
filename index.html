@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gooogle Weather (beta)</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <h2 class="text-center">Enter City Name</h2>
+        </div>
+        <div class="row form-group">
+          <input type="text" name="city" id="city" placeholder="City Name" />
+          <button class="btn btn-secondary" id="citySumbit">
+            Search City
+          </button>
+          <input type="text" name="days" id="days" placeholder="City Name" />
+          <button class="btn btn-secondary" id="citySumbitForecast">
+            place
+          </button>
+        </div>
+      </div>
+
+      <div class="row" id="mainRow">
+        <div class="col-md-12" id="rowText">
+          <h2 class="text-center" id="rowMainText1">
+            Gooogle Weather (beta)
+          </h2>
+          <h2 class="text-center" id="rowMainText1">
+            Get current Earth-prime weather information
+          </h2>
+          <div id="weatherResult"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
